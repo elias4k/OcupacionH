@@ -1,0 +1,66 @@
+﻿@model Data.Alojamientos
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Alojamientos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Localidad)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Localidad)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Clase)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Clase)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NroHab)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NroHab)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NroHabOcupadas)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NroHabOcupadas)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Plazas)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Plazas)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PlazasOcupadas)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PlazasOcupadas)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Reservas)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Reservas)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
